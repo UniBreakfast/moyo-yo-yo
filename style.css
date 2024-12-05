@@ -91,29 +91,51 @@ header {
   }
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  align-items: center;
-}
+main {
+  position: relative;
+  
+  .stuff-layer {
+    display: flex;
+    justify-content: space-between;
 
-.logo-link {
-  display: flex;
-  align-items: center;
-  width: 571px;
-}
-
-.logo-main {
-  width: 100%;
-}
-
-.main-title {
-  font-family: Freich, sans-serif;
-  font-size: 62.4px;
-  font-weight: 400;
-  line-height: 62.4px;
-  text-align: center;
-  width: 1092px;
-  margin-top: 40px;
+    .right {
+      margin-left: -800px;
+    }
+  }
+  
+  .main-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    
+    .logo-link {
+      display: flex;
+      align-items: center;
+      width: 571px;
+      
+      .logo-main {
+        width: 100%;
+      }
+    }
+    
+    .main-title {
+      /* title text image placeholder with the Freich font START */
+      color: transparent;
+      background-image: url(images/svg/main-title.svg);
+      background-repeat: no-repeat;
+      /* title text image placeholder with the Freich font END */
+      font-family: Freich, sans-serif;
+      font-size: 62.4px;
+      font-weight: 400;
+      line-height: 62.4px;
+      text-align: center;
+      width: 1092px;
+      margin-top: 40px;
+    }
+  }
 }
