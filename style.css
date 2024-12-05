@@ -75,25 +75,15 @@ header {
             object-fit: cover;
             object-position: 0;
 
-            .instagram & {
-              object-position: -52px 0;
-            }
+            .instagram & { object-position: -52px 0 }
 
-            .twitter & {
-              object-position: -104px 0;
-            }
+            .twitter & { object-position: -104px 0 }
 
-            .facebook & {
-              object-position: -156px 0;
-            }
+            .facebook & { object-position: -156px 0 }
 
-            .youtube & {
-              object-position: -208px 0;
-            }
+            .youtube & { object-position: -208px 0 }
 
-            .whatsapp & {
-              object-position: -260px 0;
-            }
+            .whatsapp & { object-position: -260px 0 }
           }
         }
       }
