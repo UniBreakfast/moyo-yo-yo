@@ -75,15 +75,25 @@ header {
             object-fit: cover;
             object-position: 0;
 
-            .instagram & { object-position: -52px 0 }
+            .instagram & {
+              object-position: -52px 0
+            }
 
-            .twitter & { object-position: -104px 0 }
+            .twitter & {
+              object-position: -104px 0
+            }
 
-            .facebook & { object-position: -156px 0 }
+            .facebook & {
+              object-position: -156px 0
+            }
 
-            .youtube & { object-position: -208px 0 }
+            .youtube & {
+              object-position: -208px 0
+            }
 
-            .whatsapp & { object-position: -260px 0 }
+            .whatsapp & {
+              object-position: -260px 0
+            }
           }
         }
       }
@@ -93,49 +103,66 @@ header {
 
 main {
   position: relative;
-  
-  .stuff-layer {
-    display: flex;
-    justify-content: space-between;
 
-    .right {
-      margin-left: -800px;
+  .stuff-layer {
+    /* display: flex;
+    justify-content: space-between; */
+
+    .man-left {
+      position: absolute;
+      width: 692px;
+      /* top: 336px;
+      right: 1032px; */
+    }
+
+    .left-ball-hand {
+
+      width: 184px;
+      height: 186px;
+    }
+
+    /* .right-guy { */
+    /* margin-left: -800px; */
+    /* margin-top: 336px; */
+  }
+
+  /* .left-guy {
+      margin-top: 336px;
+    } */
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    width: 571px;
+
+    .logo-main {
+      width: 100%;
     }
   }
-  
-  .main-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
+
+  .main-title {
+    /* title text image placeholder with the Freich font START */
+    color: transparent;
+    background-image: url(images/svg/main-title.svg);
+    background-repeat: no-repeat;
+    /* title text image placeholder with the Freich font END */
+    width: 1092px;
+    height: 124px;
     margin-top: 40px;
-    align-items: center;
-    
-    .logo-link {
-      display: flex;
-      align-items: center;
-      width: 571px;
-      
-      .logo-main {
-        width: 100%;
-      }
-    }
-    
-    .main-title {
-      /* title text image placeholder with the Freich font START */
-      color: transparent;
-      background-image: url(images/svg/main-title.svg);
-      background-repeat: no-repeat;
-      /* title text image placeholder with the Freich font END */
-      font-family: Freich, sans-serif;
-      font-size: 62.4px;
-      font-weight: 400;
-      line-height: 62.4px;
-      text-align: center;
-      width: 1092px;
-      margin-top: 40px;
-    }
+    margin-bottom: 0;
+
   }
 }
