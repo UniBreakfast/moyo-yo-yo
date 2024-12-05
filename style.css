@@ -36,6 +36,16 @@ header {
       display: flex;
       gap: 24px;
 
+      a {
+        display: flex;
+        align-items: center;
+        width: 204px;
+
+        .logo {
+          width: 100%;
+        }
+      }
+
       .promo {
         display: flex;
         align-items: center;
