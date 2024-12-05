@@ -111,8 +111,17 @@ main {
     .man-left {
       position: absolute;
       width: 692px;
+      left: -210px;
+      top: 200px;
       /* top: 336px;
       right: 1032px; */
+    }
+
+    .man-right {
+      position: absolute;
+      width: 692px;
+      top: 200px;
+      left: 610px;
     }
 
     .left-ball-hand {
