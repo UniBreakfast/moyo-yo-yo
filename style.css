@@ -1,0 +1,92 @@
+html {
+  background-color: black;
+  color: white;
+}
+
+body {
+  margin: 0;
+  background-image: url(images/bg-stars.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #D9D9D90A;
+  backdrop-filter: blur(50px);
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 87.5%;
+    margin: 0 auto;
+
+    .left {
+      display: flex;
+      gap: 24px;
+
+      .promo {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+    }
+
+    .social>ul {
+      display: flex;
+
+      gap: 7px;
+
+      li {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0;
+
+            .instagram & {
+              object-position: -52px 0;
+            }
+
+            .twitter & {
+              object-position: -104px 0;
+            }
+
+            .facebook & {
+              object-position: -156px 0;
+            }
+
+            .youtube & {
+              object-position: -208px 0;
+            }
+
+            .whatsapp & {
+              object-position: -260px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
