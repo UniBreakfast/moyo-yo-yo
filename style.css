@@ -10,7 +10,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100vh;
+  height: 1241px;
 }
 
 ul {
@@ -105,16 +105,15 @@ main {
   position: relative;
 
   .stuff-layer {
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    justify-content: space-around;
 
     .man-left {
       position: absolute;
       width: 692px;
       left: -210px;
       top: 200px;
-      /* top: 336px;
-      right: 1032px; */
+      /* flex: 0 0 692px; */
     }
 
     .man-right {
@@ -122,6 +121,7 @@ main {
       width: 692px;
       top: 200px;
       left: 610px;
+      /* flex: 0 0 692px; */
     }
 
     .left-ball-hand {
@@ -130,48 +130,41 @@ main {
       height: 186px;
     }
 
-    /* .right-guy { */
-    /* margin-left: -800px; */
-    /* margin-top: 336px; */
+
   }
 
-  /* .left-guy {
-      margin-top: 336px;
-    } */
-}
-
-.main-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  align-items: center;
-  justify-content: center;
-
-
-  .logo-link {
+  .main-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
+    flex-direction: column;
+    margin-top: 40px;
     align-items: center;
-    width: 571px;
+    justify-content: center;
 
-    .logo-main {
-      width: 100%;
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      width: 571px;
+
+      .logo-main {
+        width: 100%;
+      }
+    }
+
+    .main-title {
+      /* title text image placeholder with the Freich font START */
+      color: transparent;
+      background-image: url(images/svg/main-title.svg);
+      background-repeat: no-repeat;
+      /* title text image placeholder with the Freich font END */
+      width: 1092px;
+      height: 124px;
+      margin-top: 40px;
+      margin-bottom: 0;
+
     }
   }
-
-  .main-title {
-    /* title text image placeholder with the Freich font START */
-    color: transparent;
-    background-image: url(images/svg/main-title.svg);
-    background-repeat: no-repeat;
-    /* title text image placeholder with the Freich font END */
-    width: 1092px;
-    height: 124px;
-    margin-top: 40px;
-    margin-bottom: 0;
-
-  }
-}
