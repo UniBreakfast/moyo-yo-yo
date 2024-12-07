@@ -206,6 +206,69 @@ main {
       z-index: 1;
     }
 
+    .right-basketball {
+      position: absolute;
+      width: 123px;
+      z-index: 1;
+      top: 574px;
+      left: 1007px;
+    }
+
+    .right-small-football {
+      position: absolute;
+      width: 143px;
+      top: 195px;
+      left: 1400px;
+    }
+
+    .right-middle-football {
+      position: absolute;
+      width: 175px;
+      top: 353px;
+      left: 988px;
+    }
+
+    .right-big-football {
+      position: absolute;
+      width: 270px;
+      top: 474px;
+      left: 1275px;
+    }
+
+    .right-silver-cup {
+      position: absolute;
+      width: 338px;
+      top: 144px;
+      left: 1016px;
+    }
+
+    .right-little-coin {
+      position: absolute;
+      /* width: 154px; */
+      top: 219px;
+      left: 919px;
+    }
+
+    .right-middle-coin {
+      position: absolute;
+      top: 390px;
+      left: 1004px;
+      z-index: 3;
+    }
+
+    .right-big-coin {
+      position: absolute;
+      top: 260px;
+      left: 120%;
+
+    }
+
+    .lightning {
+      position: absolute;
+      width: 841px;
+      top: 120px;
+      left: 105px;
+    }
 
   }
 
