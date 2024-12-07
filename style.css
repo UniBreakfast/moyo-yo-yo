@@ -10,7 +10,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 1241px;
+  height: 1080px;
+  z-index: -5;
 }
 
 ul {
@@ -110,10 +111,10 @@ main {
 
     .man-left {
       position: absolute;
-      width: 692px;
+      width: 691px;
       left: -210px;
       top: 200px;
-      /* flex: 0 0 692px; */
+      z-index: 2;
     }
 
     .man-right {
@@ -121,13 +122,88 @@ main {
       width: 692px;
       top: 200px;
       left: 610px;
-      /* flex: 0 0 692px; */
+      z-index: 2;
     }
 
     .left-ball-hand {
-
       width: 184px;
       height: 186px;
+      position: absolute;
+      left: -159px;
+      top: 542px;
+      z-index: -2;
+    }
+
+    .left-shoulder-ball {
+      width: 123px;
+      height: 125px;
+      position: absolute;
+      left: -42px;
+      top: 420px;
+      z-index: -2;
+    }
+
+    .left-small-basketball {
+      position: absolute;
+      top: 322px;
+      left: -100px;
+    }
+
+    .left-big-basketball {
+      position: absolute;
+      top: 566px;
+      left: -466px;
+    }
+
+    .left-big-football {
+      width: 293px;
+      position: absolute;
+      top: 95px;
+      left: -466px;
+      z-index: -1;
+    }
+
+    .left-man-aura {
+      width: 691px;
+      height: 924px;
+      position: absolute;
+      left: -210px;
+      top: 100px;
+      z-index: -1;
+    }
+
+    .left-gold-cup {
+      width: 450px;
+      position: absolute;
+      left: -369px;
+      top: 261px;
+    }
+
+    .left-little-coin {
+      position: absolute;
+      top: 208px;
+      left: -247px;
+    }
+
+    .left-middle-coin {
+      position: absolute;
+      top: 370px;
+      left: -173px;
+      z-index: 2;
+    }
+
+    .left-big-coin {
+      position: absolute;
+      top: 365px;
+      left: -451px;
+    }
+
+    .right-man-aura {
+      position: absolute;
+      width: 692px;
+      top: 112px;
+      left: 610px;
+      z-index: 1;
     }
 
 
@@ -168,3 +244,4 @@ main {
 
     }
   }
+}
