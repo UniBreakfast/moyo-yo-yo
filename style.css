@@ -115,6 +115,7 @@ main {
       left: -210px;
       top: 200px;
       z-index: 2;
+
     }
 
     .man-right {
@@ -132,6 +133,7 @@ main {
       left: -159px;
       top: 542px;
       z-index: -2;
+      animation: move 2s infinite alternate;
     }
 
     .left-shoulder-ball {
@@ -244,7 +246,6 @@ main {
 
     .right-little-coin {
       position: absolute;
-      /* width: 154px; */
       top: 219px;
       left: 919px;
     }
@@ -266,8 +267,25 @@ main {
     .lightning {
       position: absolute;
       width: 841px;
-      top: 120px;
+      top: 133px;
       left: 105px;
+    }
+
+    .spin-circle {
+      position: absolute;
+      top: 302px;
+      z-index: 3;
+    }
+
+    .arrow-top {
+      position: absolute;
+      z-index: 4;
+    }
+
+    .arrow-bottom {
+      position: absolute;
+      top: 792px;
+      z-index: 4;
     }
 
   }
@@ -306,5 +324,34 @@ main {
       margin-bottom: 0;
 
     }
+  }
+}
+
+.footer {
+  margin-top: 889px;
+  background-color: #D9D9D9;
+
+
+
+  .footer-container {
+    margin-inline: auto;
+    text-align: center;
+    max-width: 1316px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+}
+
+
+
+
+@keyframes move {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(10px);
   }
 }
