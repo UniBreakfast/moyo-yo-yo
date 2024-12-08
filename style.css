@@ -288,6 +288,12 @@ main {
       z-index: 4;
     }
 
+    .button-circle {
+      position: absolute;
+      z-index: 4;
+      top: 513px;
+    }
+
   }
 
   .main-container {
@@ -330,6 +336,7 @@ main {
 .footer {
   margin-top: 889px;
   background-color: #D9D9D9;
+  backdrop-filter: blur(96px);
 
 
 
